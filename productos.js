@@ -39,6 +39,43 @@ const listaProductos = [
         ],
         desc: "Caiman motivo flor doble  colores tropicales surtidos paquete por 12 unidades"
     },
+     { 
+        id: 4,
+        titulo: "Caiman Cudrado Flor", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1850 c/u", 
+        img: [
+            "imagenes/caiman-cuadrado-flor-379_1.jpg",
+            "imagenes/caiman-cuadrado-flor-379_2.jpg",
+        ],
+        desc: "Caiman cuadrado flor colores hawaianos surtidos paquete por 12 unidades"
+    },
+    { 
+        id: 5,
+        titulo: "Caiman Cudrado", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2100 c/u", 
+        img: [
+            "imagenes/caiman-cuadrado-377_1.jpg",
+            "imagenes/caiman-cuadrado-377_2.jpg",
+        ],
+        desc: "Caiman cuadrado manchas color mate surtido paquete por 12 unidades"
+    },
+     { 
+        id: 6,
+        titulo: "Caiman Cudrado Transparente", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2550 c/u", 
+        img: [
+            "imagenes/caiman-cuadrado-transparente_560_1.jpg",
+            "imagenes/caiman-cuadrado-transparente_560_2.jpg",
+        ],
+        desc: "Caiman cuadrado transparente paquete por 12 unidades"
+    },
+
 
   
     // Para agregar más, pon una coma después de la llave y copia el bloque

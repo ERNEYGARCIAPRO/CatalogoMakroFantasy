@@ -1,0 +1,551 @@
+:root {
+    --azul-electrico: #0033FF;
+    --fucsia-vibrante: #FF007F;
+    --cian-neon: #00FFFF;
+    --blanco: #FFFFFF;
+    --negro-fondo: #0B0B0B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--negro-fondo);
+    color: var(--blanco);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 5%;
+    background-color: rgba(0,51,255,0.1);
+    border-bottom: 2px solid var(--fucsia-vibrante);
+}
+.logo-text {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+.logo span{
+    color: var(--fucsia-vibrante);
+}
+#menu-check:checked{
+   left: 0;
+}
+#menu-check {
+    display: none;
+}
+/* Escondemos la hamburguesa */
+.menu-button { 
+    display: none; 
+} 
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+.nav-menu ul a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-menu ul a:hover{
+    color: var(--cian-neon);
+}
+@media (max-width: 992px) {
+    /* 1. Forzamos que los elementos se apilen uno sobre otro */
+    .header-container {
+        flex-direction: column; 
+        align-items: center;    /* Centra logo y menú horizontalmente */
+        gap: 20px;              /* Espacio entre el logo y el menú */
+        padding: 20px 0;
+    }
+
+    /* 2. El logo sube automáticamente al ser el primer hijo */
+    .logo-text {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    /* 3. El menú queda debajo y centrado */
+    .nav-menu {
+        width: 100%;           /* Ocupa todo el ancho para facilitar el centrado */
+    }
+
+    .nav-menu ul {
+        display: flex;
+        justify-content: center; /* Centra los enlaces */
+        gap: 30px;              /* Un poco más de aire entre enlaces */
+        padding: 0;
+    }
+    /* 4. Aseguramos que la hamburguesa NO se vea en este rango */
+    .menu-button {
+        display: none;
+    }
+}
+/* --- DISPOSITIVOS MÓVILES PEQUEÑOS (< 576px) --- */
+@media (max-width: 576px) {
+    .header-container {
+        display: flex !important;
+        /* Cambiamos la dirección para asegurar el control total */
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 4%;
+    }
+    /* 2. Movemos el logo a la DERECHA */
+    .logo {
+        order: 1; /* Segundo elemento visual */
+        text-align: right;
+    }
+
+    /* 1. Movemos el botón de hamburguesa a la IZQUIERDA */
+    .menu-button {
+        order: 2; /* Primer elemento visual */
+        display: block !important;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1.6rem;
+        z-index: 1001;
+    }    
+    .logo-text {
+        font-size: 1.4rem; /* Ajustamos tamaño para pantallas angostas */
+        letter-spacing: 1px;
+    }
+
+    /* 3. Ajuste del menú lateral (Slide desde la izquierda) */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Ahora se esconde a la izquierda */
+        width: 30%;
+        height: 100vh;
+        transition: 0.4s ease-in-out;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco muy transparente */
+        backdrop-filter: blur(15px);                /* El desenfoque clave */
+        -webkit-backdrop-filter: blur(15px);        /* Soporte para Safari */
+        border-left: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil para definir el límite */
+        padding-top: 100px;
+        transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Transición más elegante */
+        z-index: 1000;
+    }
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column; /* LA CLAVE: los pone uno debajo del otro */
+        align-items: flex-end;  /* Los alinea a la derecha */
+        gap: 25px;              /* Espacio vertical entre cada link */
+        padding-right: 10%;     /* Margen interno para que no peguen al borde */
+    }
+    .nav-menu ul li a {
+        font-size: 1.3rem;      /* Más grandes para facilitar el toque */
+        text-align: right;
+    }
+
+    /* 4. Activación: El menú entra desde la izquierda */
+    #menu-check:checked ~ .nav-menu {
+        left: auto;
+        right:0;
+    }
+}
+    
+/*Seccion Hero (Bienvenida)*/
+.home-hero{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    background: linear-gradient(135deg,var(--negro-fondo) 0%, #001A80 100%);
+}
+.hero-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero-header h2 span {
+    color: var(--fucsia-vibrante);
+}
+.hero-header p{
+    color: #ccc;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+@media (max-width: 768px){
+    .hero-header h2{
+        font-size: 2rem;
+    }
+    .hero-header p{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 576px) {
+    .hero-header h2{
+        font-size: 1.9rem;        
+    }
+    .hero-header p{
+        font-size: 0.9rem;
+    }
+}
+
+.product-scroller {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    gap: 10px;
+    padding: 15px 15px;
+    width: 100%;
+    justify-content: center;
+}
+.product-card{
+    width: 100%;
+    height: 320px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+
+}
+.product-card:hover{
+    border-color: var(--fucsia-vibrante);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+}
+.product-card-img{
+    width: 100%;
+    height: 180px;
+    padding: 2px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0, 51, 255, 0.4));
+    transition: transform 0.3s;
+}
+.product-card h3{
+    font-size: 0.9rem;
+    color: var(--blanco);
+    margin-bottom: 5px;
+}
+.product-card p{
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.product-price{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--fucsia-vibrante);
+    margin: 3px 0;
+    text-shadow:0 0 10px rgba(255, 0, 127, 0.3);
+}
+.btn-card{
+    background: transparent;
+    border: 1px solid var(--fucsia-vibrante);
+    margin-top: auto;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+.btn-card:hover{
+    background: var(--fucsia-vibrante);
+    color: white;
+}
+.modal{
+    display:none;
+    position:fixed;
+    z-index: 1000;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.modal-content{
+    position: relative;
+    margin: 0 auto;
+    top: 5%;
+    background-color: var(--negro-fondo);
+    padding: 25px;
+    border: 2px solid var(--cian-neon);
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    color: white;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.modal-content::-webkit-scrollbar{
+    display: none;
+} 
+.modal-nav-arrows{
+    position: fixed;    
+    left: 50%;
+    top: 50%;
+    transform:translate(400px, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+}
+.nav-arrow{
+    background-color: rgba(0, 0, 0,0.6);
+    color: var(--cian-neon);
+    font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20%;
+    transition: 0.3s;
+}
+.close-modal{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    color: var(--cian-neon);
+}
+.modal-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+.modal-gallery{
+    display: flex;
+    flex-direction: column;
+}
+.thumbnails{
+display: flex;
+justify-content: center;
+gap: 10px;
+margin-top: 15px;
+}
+.thumbnails img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #444;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.thumbnails img:hover{
+    border-color: var(--cian-neon);
+    transform: scale(1.1);
+}
+.main-modal-img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+.modal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+#modal-titulo{
+    font-size: 1.8rem;
+    color:var(--blanco);
+    text-align: center  ;
+}
+.modal-price{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--cian-neon);
+    font-weight: bold;
+}
+.modal-full-description{
+    line-height: 1.6;
+    padding-right: 20px;
+    color: #ccc;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+}
+.modal-full-description span{
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 768){
+    .modal-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .modal-content{
+        width: 95%;
+        padding: 15px;
+        top: 2%;
+        transform: translateY(0);
+        max-height: 96vh;
+    }
+    .main-modal-img{
+        max-height: 250px;
+    }
+    .modal-info{
+        align-items: center;
+        text-align: center;
+    }
+    .modal-full-description{
+        text-align: center;
+    }
+    .modal-nav-arrows{
+        flex-direction: row;
+        left: 50%;
+        top: auto;
+        bottom: 20px;
+        transform: translateX(-50%);
+        gap: 30px;
+        
+    }
+}
+@media (max-width:768px){
+        .navbar-grid{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 5px 5%;       
+        }
+        .logo-container{
+            order: 1;
+        }
+        .navbar-grid > div:not(.logo-container){
+            order: 2;
+            display: inline-flex;
+            justify-content: center;
+            width: auto;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .menu li{
+            font-size: 0.9rem;
+        }
+        .btn-mayoristas{
+            display: inline-block !important;
+            margin-left: 10px !important;
+            white-space: nwrap;
+            vertical-align: middle;
+            font-size: 0.85rem;
+            border-bottom: 1px solid(--blanco);
+            border-radius: 2px;
+            color: var(--fucsia-vibrante);
+            transition: 0.3s;
+        }
+
+    }
+.main-footer{
+    background-color: #050505;
+    border-top: 2px solid var(--cian-neon);
+    box-shadow: 0px -10px 20px rgba(0, 255, 255, 0.1);
+    padding: 20px 0 5px 0;
+    margin-top: 5px;
+    color: #b0b0b0;
+}
+.footer-grid{
+    max-width: 1200px;
+    margin:0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    gap: 10px;
+    padding: 0 5%;
+}
+.footer-section h3{
+    color: var(--fucsia-vibrante);
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-section h2{
+    color: white;
+}
+.footer-logo-text span{
+    color: var(--fucsia-vibrante);
+}
+.footer-section p{
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.footer-section i{
+    color: var(--cian-neon);
+    margin-right: 10px;
+}
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li{
+    margin-bottom: 12px;
+}
+.footer-section ul li a{
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: 0.3 ease;
+}
+.footer-section ul li a:hover{
+    color: var(--cian-neon);
+    padding-left: 8px;
+}
+.social-icons{
+    display: flex;
+    gap: 20px;
+    margin-top:5px;
+}
+.social-icons a{
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.social-icons a:hover{
+    color: var(--fucsia-vibrante);
+    transform:translateY(-5px);
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.85rem;
+}
+.corazon{
+    color: red;
+    font-size: 1.5rem;
+}
+@media (max-width: 768px){
+    .social-icons{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }   
+}

@@ -170,7 +170,103 @@ const listaProductos = [
             "imagenes/caiman-mariposa-translucido-154_2.jpg",
         ],
         desc: "Caiman mariposa translucido pequeño colores surtidos paquete x 12 uni"
-    }
-  
+    },
+    { 
+        id: 15,
+        titulo: "Caiman Corazon grande", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1700 c/u", 
+        img: [
+            "imagenes/caiman-corazon-369_1.jpg",
+            "imagenes/caiman-corazon-369_2.jpg",
+        ],
+        desc: "Caiman forma de corazon tamaño grande colores mate surtidos paquete x 12 uni."
+    },
+    { 
+        id: 16,
+        titulo: "Caiman Cuadrado Transparente decorado", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2550 c/u", 
+        img: [
+            "imagenes/caiman-cuadrado-colores translucido-556_1.jpg",
+            "imagenes/caiman-cuadrado-colores translucido-556_2.jpg",
+        ],
+        desc: "Caiman grande transparente, decorado con piedras y colores surtidos, paquete x 12 uni."
+    },
+    { 
+        id: 17,
+        titulo: "Caiman Mariposa Borde Negro", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 4200 c/u", 
+        img: [
+            "imagenes/caiman-mariposa-borde-negro-375_1.jpg",
+            "imagenes/caiman-mariposa-borde-negro-375_2.jpg",
+        ],
+        desc: "Caiman grande, colores surtido, bordeado negro motivo de mariposa paquete x 12 uni."
+    },
+    { 
+        id: 18,
+        titulo: "Caiman Flor Borde Negro", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 4200 c/u", 
+        img: [
+            "imagenes/caiman-flor-borde-negro_368_1.jpg",
+            "imagenes/caiman-flor-borde-negro_368_2.jpg",
+        ],
+        desc: "Caiman grande, colores surtido, bordeado negro motivo de flor paquete x 12 uni."
+    },
+    { 
+        id: 19,
+        titulo: "Caiman Mariposa Pequeño pastel", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1000 c/u", 
+        img: [
+            "imagenes/caiman-mariposa-pequeña-pastel-155_1.jpg",
+            "imagenes/caiman-mariposa-pequeña-pastel-155_2.jpg",
+        ],
+        desc: "Caiman pequeño en colores pasteles, surtido con motivo de mariposa, paquete x12 uni."
+    },
+    { 
+        id: 20,
+        titulo: "Caiman Cuadrado Marron", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2100 c/u", 
+        img: [
+            "imagenes/caiman-cuadrado-marron-392-293-394_1.jpg",
+            "imagenes/caiman-cuadrado-marron-392-293-394_2.jpg",
+        ],
+        desc: "Caiman cuadrado decorado, color base marron paquete x12 uni."
+    },
+    { 
+        id: 21,
+        titulo: "Caiman tira decorado", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1400 c/u", 
+        img: [
+            "imagenes/caiman-tira-decorado-395_1.jpg",
+            "imagenes/caiman-tira-decorado-395_2.jpg",
+        ],
+        desc: "Caiman tamaño mediano, decorado, colores surtidos paquete x12 uni."
+    },
+ { 
+        id: 22,
+        titulo: "Caiman tira metalizado", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1400 c/u", 
+        img: [
+            "imagenes/caiman-tira-metalizado-163_1.jpg",
+            "imagenes/caiman-tira-metalizado-163_2.jpg",
+        ],
+        desc: "Caiman tamaño mediano, metalizado, colores surtidos paquete x12 uni."
+    },
+
     // Para agregar más, pon una coma después de la llave y copia el bloque
 ];

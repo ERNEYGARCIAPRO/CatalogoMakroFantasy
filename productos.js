@@ -565,13 +565,208 @@ const listaProductos = [
      { 
         id: 46,
         titulo: "Gorro Satin", 
-        marca: "Belleza",
-        categoria: "Fantasia",
+        marca: "Generico",
+        categoria: "Belleza",
         precio:" 3800 c/u", 
         img: [
             "imagenes/gorro-satin-rio-668.jpeg",
         ],
         desc: "Gorro satin, paquete x 3 uni."
+    },
+     { 
+        id: 47,
+        titulo: "Moña Pompom Flor", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1300 c/u", 
+        img: [
+            "imagenes/moña-pompom- flor-metalica-523_1.jpg",
+            "imagenes/moña-pompom- flor-metalica-523_2.jpg",
+        ],
+        desc: "Moña con flor estilo Pompom, colores (BLanco, Rosa), paquete x 12 uni."
+    },
+    { 
+        id: 48,
+        titulo: "Moña enrruchada", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1400 c/u", 
+        img: [
+            "imagenes/moña-enrruchada-347-348-325_1_2.jpg",
+            "imagenes/moña-enrruchada-347-348-325_1.jpg",
+            "imagenes/moña-enrruchada-347-348-325_3.jpg",
+        ],
+        desc: "Moña con estilo enrruchada 4.5cm colores surtidos, paquete x 12 uni."
+    },
+    { 
+        id: 49,
+        titulo: "Moña Flor X 3 Pastel", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1700 c/u", 
+        img: [
+            "imagenes/moña-flor-x3-pastel-350.jpg",
+        ],
+        desc: "Moña flor set x 3 unidades, colores pastel, paquete x 12 uni."
+    },
+    { 
+        id: 50,
+        titulo: "moña x30", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1400 c/u", 
+        img: [
+            "imagenes/moña-x30-331-332-333-334_1.jpg",
+            "imagenes/moña-x30-331-332-333-334_2.jpg",
+            "imagenes/moña-x30-331-332-333-334_3.jpg",
+            "imagenes/moña-x30-331-332-333-334_4.jpg",
+
+        ],
+        desc: "Moña x 30 piezas, colores surtidos, paquete x 12 uni."
+    },
+    { 
+        id: 51,
+        titulo: "moña x50 3.5cm", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2550 c/u", 
+        img: [
+            "imagenes/moña-x30-331-332-333-334_1.jpg",
+            "imagenes/moña-x30-331-332-333-334_2.jpg",
+            "imagenes/moña-x30-331-332-333-334_3.jpg",
+            "imagenes/moña-x30-331-332-333-334_4.jpg",
+
+        ],
+        desc: "Moña x 50 piezas, 3.5cm, colores surtidos, paquete x 12 uni."
+    },
+    { 
+        id: 52,
+        titulo: "moña x20 3.5cm", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 2550 c/u", 
+        img: [
+            "imagenes/moña-x30-331-332-333-334_1.jpg",
+            "imagenes/moña-x30-331-332-333-334_2.jpg",
+            "imagenes/moña-x30-331-332-333-334_3.jpg",
+            "imagenes/moña-x30-331-332-333-334_4.jpg",
+
+        ],
+        desc: "Moña x 20 piezas, 3.5cm, colores surtidos, paquete x 12 uni."
+    },
+    { 
+        id: 53,
+        titulo: "Bolsa de regalo motivo gato", 
+        marca: "Generico",
+        categoria: "Detalles",
+        precio:" 2400 c/u", 
+        img: [
+            "imagenes/bolsa-regalo-gato-798_1.jpg",
+            "imagenes/bolsa-regalo-gato-798_2.jpg",
+            "imagenes/bolsa-regalo-gato-798_3.jpg",
+        ],
+        desc: "Bolsa de regalo, motivo gatos, paquete x 12 uni."
+    },
+    { 
+        id: 54,
+        titulo: "Bolsa de regalo 3D varios motivos", 
+        marca: "Generico",
+        categoria: "Detalles",
+        precio:" 2800 c/u", 
+        img: [
+            "imagenes/bolsa-regalo-3d-1885-1886-1887_1.jpg",
+            "imagenes/bolsa-regalo-3d-1885-1886-1887_2.jpg",
+            "imagenes/bolsa-regalo-3d-1885-1886-1887_3.jpg",
+            "imagenes/bolsa-regalo-3d-1885-1886-1887_4.jpg",
+            "imagenes/bolsa-regalo-3d-1885-1886-1887_5.jpg",
+        ],
+        desc: "Bolsa de regalo, motivo surtidos, 3d,paquete x 12 uni."
+    },
+    
+    { 
+        id: 55,
+        titulo: "Bolsa de Regalo Sobre", 
+        marca: "Generico",
+        categoria: "Detalles",
+        precio:" 2800 c/u", 
+        img: [
+            "imagenes/bolsa-regalo-sobre-1826_1.jpg",
+            "imagenes/bolsa-regalo-sobre-1826_2.jpg",
+            "imagenes/bolsa-regalo-sobre-1826_3.jpg",
+            "imagenes/bolsa-regalo-sobre-1826_4.jpg",
+            "imagenes/bolsa-regalo-sobre-1826_5.jpg",
+            "imagenes/bolsa-regalo-sobre-1826_6.jpg",
+        ],
+        desc: "Bolsa de regalo, motivo surtidos,tipo sobre escarchado,paquete x 12 uni."
+    },
+     { 
+        id: 56,
+        titulo: "Bolsa de Regalo Brillante Mediana", 
+        marca: "Generico",
+        categoria: "Detalles",
+        precio:" 1550 c/u", 
+        img: [
+            "imagenes/bolsa-regalo-brillante-mediana-319_1.jpg",
+            "imagenes/bolsa-regalo-brillante-mediana-319_2.jpg",
+        ],
+        desc: "Bolsa de regalo mediana, brillante, colores surtidos ,paquete x 12 uni."
+    },
+        { 
+        id: 57,
+        titulo: "Kit Moña + Gancho", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 3100 c/u", 
+        img: [
+            "imagenes/kit-moña-gancho-377_1.jpg",
+            "imagenes/kit-moña-gancho-377_2.jpg",
+        ],
+        desc: "Kit moñax 12 unidades y ganchos p 4 unidades, colores surtidos ,paquete x 12 uni."
+    },
+        { 
+        id: 58,
+        titulo: "Pulsera Niña", 
+        marca: "Generico",
+        categoria: "Fantasia",
+        precio:" 1400 c/u", 
+        img: [
+            "imagenes/pulsera-niña-067_1.jpg",
+            "imagenes/pulsera-niña-067_2.jpg",
+        ],
+        desc: "Pulsera para niña decorada con perlas y digen plastico ,paquete x 12 uni."
+    },
+            { 
+        id: 59,
+        titulo: "Depilador De Cejas", 
+        marca: "Generico",
+        categoria: "Belleza",
+        precio:" 800 c/u", 
+        img: [
+            "imagenes/depilador-cejas-516.jpg",
+        ],
+        desc: "Pinza para depilar cejas estampados ,paquete x 12 uni."
+    },
+    { 
+        id: 60,
+        titulo: "Pomo Para Polvos x 3", 
+        marca: "Generico",
+        categoria: "Belleza",
+        precio:" 3000 c/u", 
+        img: [
+            "imagenes/depilador-cejas-516.jpg",
+        ],
+        desc: "Pomo para polvos x 3 unidades, paquete x 3 uni."
+    },
+    { 
+        id: 61,
+        titulo: "Peine Saca Piojos Con Mango", 
+        marca: "Generico",
+        categoria: "Belleza",
+        precio:" 2100 c/u", 
+        img: [
+            "imagenes/peine-piojo-mango-453.jpg",
+        ],
+        desc: "Pomo para polvos x 3 unidades, paquete x 3 uni."
     },
     // Para agregar más, pon una coma después de la llave y copia el bloque
 ];

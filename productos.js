@@ -646,10 +646,7 @@ const listaProductos = [
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
-            "imagenes/moña-x30-331-332-333-334_1.jpg",
-            "imagenes/moña-x30-331-332-333-334_2.jpg",
-            "imagenes/moña-x30-331-332-333-334_3.jpg",
-            "imagenes/moña-x30-331-332-333-334_4.jpg",
+            "imagenes/moña-3.5-x20.jpg",
 
         ],
         desc: "Moña x 20 piezas, 3.5cm, colores surtidos, paquete x 12 uni."

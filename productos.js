@@ -753,7 +753,7 @@ const listaProductos = [
         categoria: "Belleza",
         precio:" 3000 c/u", 
         img: [
-            "imagenes/depilador-cejas-516.jpg",
+            "imagenes/pomo-para-polvos.jpg",
         ],
         desc: "Pomo para polvos x 3 unidades, paquete x 3 uni."
     },

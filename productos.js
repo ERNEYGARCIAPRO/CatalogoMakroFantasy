@@ -516,9 +516,9 @@ const listaProductos = [
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
-            "imagenes/set-piojita + moña-329-330_1.jpg",
-            "imagenes/set-piojita + moña-329-330_2.jpg",
-            "imagenes/set-piojita + moña-329-330_3.jpg",
+            "imagenes/set-piojita-moña-329-330_1.jpg",
+            "imagenes/set-piojita- moña-329-330_2.jpg",
+            "imagenes/set-piojitamoña-329-330_3.jpg",
         ],
         desc: "Set, combina 6 piojitps 2 moñas con figuras variadas y 12 pares de moñas colores surtidos , paquete x12 uni."
     },
@@ -529,8 +529,8 @@ const listaProductos = [
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
-            "imagenes/set-moña + flor-hawaiana-326_1.jpg",
-            "imagenes/set-moña + flor-hawaiana-326_2.jpg",
+            "imagenes/set-moña-flor-hawaiana-326_1.jpg",
+            "imagenes/set-moña-flor-hawaiana-326_2.jpg",
 
         ],
         desc: "Set, convina 2 ganchos de flor hawaiana colores surtidos y 12 pares de moñas colores surtidos, paquete x12 uni."

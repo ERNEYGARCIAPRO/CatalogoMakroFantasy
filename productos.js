@@ -1,10 +1,10 @@
 // La variable 'listaProductos' debe ser global para que main.js la vea
-const listaProductos = [
+const productos = [
     { 
         id: 1,
         titulo:"Banana Dorada", 
-        marca: "Generico",
-        categoria: "Fantasia",
+        codigo: "Cod: 195-196-197",
+        categoria: "cacharreria",
         precio:"1400 c/u", 
         img: [
             "imagenes/Banana-Dorada-195-196-197_1.jpg",
@@ -17,7 +17,7 @@ const listaProductos = [
     { 
         id: 2, 
         titulo: "Gancho De Ropa", 
-        marca: "Rio",
+        codigo: "Cod: 932",
         categoria: "Cacharreria",
         precio:"3500 paq", 
         img: [
@@ -29,8 +29,8 @@ const listaProductos = [
     { 
         id: 3,
         titulo: "Caiman Flor Doble", 
-        marca: "Generico",
-        categoria: "Fantasia",
+        codigo: "Generico",
+        categoria: "Cacharreria",
         precio:" 2600 c/u", 
         img: [
             "imagenes/Caiman-Flor-Doble-372_1.jpg",
@@ -42,7 +42,7 @@ const listaProductos = [
      { 
         id: 4,
         titulo: "Caiman Cudrado Flor", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -54,7 +54,7 @@ const listaProductos = [
     { 
         id: 5,
         titulo: "Caiman Cudrado", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2100 c/u", 
         img: [
@@ -66,7 +66,7 @@ const listaProductos = [
      { 
         id: 6,
         titulo: "Caiman Cudrado Transparente", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
@@ -78,7 +78,7 @@ const listaProductos = [
          { 
         id: 7,
         titulo: "Caiman Cudrado Dorado Colores", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1700c/u", 
         img: [
@@ -90,7 +90,7 @@ const listaProductos = [
     { 
         id: 8,
         titulo: "Caiman Flor Girasol Pequeño", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 950 c/u", 
         img: [
@@ -104,7 +104,7 @@ const listaProductos = [
     { 
         id: 9,
         titulo: "Caiman Flor Transparente Mini", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 900 c/u", 
         img: [
@@ -116,7 +116,7 @@ const listaProductos = [
     { 
         id: 10,
         titulo: "Caiman Flor Mediano Trasnlucido", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -128,7 +128,7 @@ const listaProductos = [
     { 
         id: 11,
         titulo: "Caiman Metalico Mini Corona", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -140,7 +140,7 @@ const listaProductos = [
     { 
         id: 12,
         titulo: "Caiman Tira Pasteles", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1300 c/u", 
         img: [
@@ -152,7 +152,7 @@ const listaProductos = [
     { 
         id: 13,
         titulo: "Caiman Elegant", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2000 c/u", 
         img: [
@@ -164,7 +164,7 @@ const listaProductos = [
     { 
         id: 14,
         titulo: "Caiman Mariposa Trasnlucido pequeño", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1000 c/u", 
         img: [
@@ -176,7 +176,7 @@ const listaProductos = [
     { 
         id: 15,
         titulo: "Caiman Corazon grande", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1700 c/u", 
         img: [
@@ -188,7 +188,7 @@ const listaProductos = [
     { 
         id: 16,
         titulo: "Caiman Cuadrado Transparente decorado", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
@@ -200,7 +200,7 @@ const listaProductos = [
     { 
         id: 17,
         titulo: "Caiman Mariposa Borde Negro", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 4200 c/u", 
         img: [
@@ -212,7 +212,7 @@ const listaProductos = [
     { 
         id: 18,
         titulo: "Caiman Flor Borde Negro", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 4200 c/u", 
         img: [
@@ -224,7 +224,7 @@ const listaProductos = [
     { 
         id: 19,
         titulo: "Caiman Mariposa Pequeño pastel", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1000 c/u", 
         img: [
@@ -239,7 +239,7 @@ const listaProductos = [
     { 
         id: 20,
         titulo: "Caiman Cuadrado Marron", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2100 c/u", 
         img: [
@@ -251,7 +251,7 @@ const listaProductos = [
     { 
         id: 21,
         titulo: "Caiman tira decorado", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -263,7 +263,7 @@ const listaProductos = [
  { 
         id: 22,
         titulo: "Caiman tira metalizado", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -275,7 +275,7 @@ const listaProductos = [
      { 
         id: 23,
         titulo: "Moña De Pana Con Piedras", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
@@ -286,7 +286,7 @@ const listaProductos = [
      { 
         id: 24,
         titulo: "Flor Hawaii Mediana", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1700 c/u", 
         img: [
@@ -297,7 +297,7 @@ const listaProductos = [
      { 
         id: 25,
         titulo: "Moña Dona", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 850 c/u", 
         img: [
@@ -311,7 +311,7 @@ const listaProductos = [
      { 
         id: 26,
         titulo: "Moña Tercipelo", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -322,7 +322,7 @@ const listaProductos = [
      { 
         id: 27,
         titulo: "Caiman Corazones Con Pintas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -334,7 +334,7 @@ const listaProductos = [
      { 
         id: 28,
         titulo: "Caiman flor Pastel Pequeño", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 850 c/u", 
         img: [
@@ -348,7 +348,7 @@ const listaProductos = [
          { 
         id: 29,
         titulo: "Ligas de Bolsa Pequeñas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 650 c/u", 
         img: [
@@ -363,7 +363,7 @@ const listaProductos = [
          { 
         id: 30,
         titulo: "Caiman Rosa Araña", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1700 c/u", 
         img: [
@@ -375,7 +375,7 @@ const listaProductos = [
          { 
         id: 31,
         titulo: "Moña Labubu", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1650 c/u", 
         img: [
@@ -387,7 +387,7 @@ const listaProductos = [
          { 
         id: 32,
         titulo: "Caiman Frutas tropicales", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2800 c/u", 
         img: [
@@ -400,7 +400,7 @@ const listaProductos = [
          { 
         id: 33,
         titulo: "Lapiz 2IN1 Maquillaje Engol", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -415,7 +415,7 @@ const listaProductos = [
     { 
         id: 34,
         titulo: "Caiman GDE Flor", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -427,7 +427,7 @@ const listaProductos = [
        { 
         id: 35,
         titulo: "Anillos Caja Corazon", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 700 c/u", 
         img: [
@@ -439,7 +439,7 @@ const listaProductos = [
        { 
         id: 36,
         titulo: "Caiman Mariposa Borde Color", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 4200 c/u", 
         img: [
@@ -451,7 +451,7 @@ const listaProductos = [
        { 
         id: 37,
         titulo: "Caiman Flor Mate", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
@@ -464,7 +464,7 @@ const listaProductos = [
        { 
         id: 38,
         titulo: "Caiman Flor Pintas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1850 c/u", 
         img: [
@@ -476,7 +476,7 @@ const listaProductos = [
        { 
         id: 39,
         titulo: "Caiman Flor estampado", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
@@ -488,7 +488,7 @@ const listaProductos = [
        { 
         id: 40,
         titulo: "Moña 6 Rayas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 700 c/u", 
         img: [
@@ -500,7 +500,7 @@ const listaProductos = [
      { 
         id: 41,
         titulo: "Ligas Girls Surtidas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 800 c/u", 
         img: [
@@ -512,20 +512,20 @@ const listaProductos = [
      { 
         id: 42,
         titulo: "Set Piojitos + Moñas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
             "imagenes/set-piojita-moña-329-330_1.jpg",
-            "imagenes/set-piojita- moña-329-330_2.jpg",
-            "imagenes/set-piojitamoña-329-330_3.jpg",
+            "imagenes/set-piojita-moña-329-330_2.jpg",
+            "imagenes/set-pioji-tamoña-329-330_3.jpg",
         ],
         desc: "Set, combina 6 piojitps 2 moñas con figuras variadas y 12 pares de moñas colores surtidos , paquete x12 uni."
     },
      { 
         id: 43,
         titulo: "Set Flor Hawaiana + Moñas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
@@ -538,7 +538,7 @@ const listaProductos = [
      { 
         id: 44,
         titulo: "Pomo Exfoliante", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:" 2100 c/u", 
         img: [
@@ -550,7 +550,7 @@ const listaProductos = [
      { 
         id: 45,
         titulo: "Mascarilla Velo Surtida", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:"1150 c/u", 
         img: [
@@ -565,7 +565,7 @@ const listaProductos = [
      { 
         id: 46,
         titulo: "Gorro Satin", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:" 3800 c/u", 
         img: [
@@ -576,7 +576,7 @@ const listaProductos = [
      { 
         id: 47,
         titulo: "Moña Pompom Flor", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1300 c/u", 
         img: [
@@ -588,7 +588,7 @@ const listaProductos = [
     { 
         id: 48,
         titulo: "Moña enrruchada", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -601,7 +601,7 @@ const listaProductos = [
     { 
         id: 49,
         titulo: "Moña Flor X 3 Pastel", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1700 c/u", 
         img: [
@@ -612,7 +612,7 @@ const listaProductos = [
     { 
         id: 50,
         titulo: "moña x30", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -627,7 +627,7 @@ const listaProductos = [
     { 
         id: 51,
         titulo: "moña x50 3.5cm", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
@@ -642,7 +642,7 @@ const listaProductos = [
     { 
         id: 52,
         titulo: "moña x20 3.5cm", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 2550 c/u", 
         img: [
@@ -654,7 +654,7 @@ const listaProductos = [
     { 
         id: 53,
         titulo: "Bolsa de regalo motivo gato", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Detalles",
         precio:" 2400 c/u", 
         img: [
@@ -667,7 +667,7 @@ const listaProductos = [
     { 
         id: 54,
         titulo: "Bolsa de regalo 3D varios motivos", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Detalles",
         precio:" 2800 c/u", 
         img: [
@@ -683,7 +683,7 @@ const listaProductos = [
     { 
         id: 55,
         titulo: "Bolsa de Regalo Sobre", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Detalles",
         precio:" 2800 c/u", 
         img: [
@@ -699,7 +699,7 @@ const listaProductos = [
      { 
         id: 56,
         titulo: "Bolsa de Regalo Brillante Mediana", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Detalles",
         precio:" 1550 c/u", 
         img: [
@@ -711,7 +711,7 @@ const listaProductos = [
         { 
         id: 57,
         titulo: "Kit Moña + Gancho", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 3100 c/u", 
         img: [
@@ -723,7 +723,7 @@ const listaProductos = [
         { 
         id: 58,
         titulo: "Pulsera Niña", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Fantasia",
         precio:" 1400 c/u", 
         img: [
@@ -735,7 +735,7 @@ const listaProductos = [
             { 
         id: 59,
         titulo: "Depilador De Cejas", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:" 800 c/u", 
         img: [
@@ -746,7 +746,7 @@ const listaProductos = [
     { 
         id: 60,
         titulo: "Pomo Para Polvos x 3", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:" 3000 c/u", 
         img: [
@@ -757,7 +757,7 @@ const listaProductos = [
     { 
         id: 61,
         titulo: "Peine Saca Piojos Con Mango", 
-        marca: "Generico",
+        codigo: "Generico",
         categoria: "Belleza",
         precio:" 2100 c/u", 
         img: [

@@ -1,48 +1,48 @@
-const contenedor = document.getElementById("contenedor-productos");
-const modal = document.getElementById("modal-product");
+function mostrarProductos(productos) {
+    const contenedor = document.getElementById("contenedor-principal");
+    contenedor.innerHTML = ""; // Limpiamos para que esté siempre ordenado
 
-function renderizarProductos() {
-    if (!contenedor) return;
+    productos.forEach(producto => {
+        const card = document.createElement("div");
+        card.classList.add("product-card");
 
-    contenedor.innerHTML = listaProductos.map(prod => `
-        <div class="product-card">
-            <img src="${prod.img[0]}" alt="${prod.titulo}" class="product-card-img">
-            <h3>${prod.titulo}</h3>
-            <p>${prod.marca}<br><span class="product-price">$ ${prod.precio}</span></p>
-            <a href="#" class="btn-card" onclick="abrirModal(${prod.id})">Ver</a>
-        </div>
-    `).join('');
+        card.innerHTML = `
+            <div class="card-img">
+                <img src="${producto.img[0]}" alt="${producto.titulo}">
+            </div>
+            <div class="card-info">
+            
+                <h3>${producto.titulo}</h3>
+                <p class="codigo">${producto.codigo}</p>
+                <p class="descripcion">${producto.desc}</p>
+                <div class="card-footer">
+                    <span class="precio">$${producto.precio}</span>
+                    <a href="https://wa.me/573171652209?text=Hola, me interesa el producto: ${producto.titulo}" 
+                       target="_blank" class="btn-pedido">
+                       <i class="fab fa-whatsapp"></i> Pedir
+                    </a>
+                </div>
+            </div>
+        `;
+        contenedor.appendChild(card);
+    });
 }
+const linksMenu = document.querySelectorAll('.nav-menu a');
 
-window.abrirModal = function(id) {
-    const producto = listaProductos.find(p => p.id === id);
-    if (!producto) return;
+linksMenu.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que la página salte
+        
+        const categoriaSeleccionada = e.target.textContent.toLowerCase();
 
-    // 1. Imagen principal del modal
-    const mainImg = document.getElementById("main-img");
-    mainImg.src = producto.img[0];
+        if (categoriaSeleccionada === "inicio") {
+            mostrarProductos(productos); // Muestra todo
+        } else {
+            const productosFiltrados = productos.filter(p => p.categoria.toLowerCase() === categoriaSeleccionada);
+            mostrarProductos(productosFiltrados);
+        }
+    });
+});
 
-    // 2. Generar miniaturas (Thumbnails)
-    const contenedorThumbnails = document.querySelector(".thumbnails");
-    contenedorThumbnails.innerHTML = producto.img.map(url => `
-        <img src="${url}" onclick="cambiarImagenPrincipal('${url}')" alt="Vista miniatura">
-    `).join('');
-
-    // 3. Textos del modal
-    document.getElementById("modal-titulo").innerText = producto.titulo;
-    document.querySelector(".modal-price").innerText = `$ ${producto.precio}`;
-    document.querySelector(".modal-full-description").innerText = producto.desc;
-    
-    modal.style.display = "block";
-}
-
-// Función para que al hacer clic en una miniatura, cambie la grande
-window.cambiarImagenPrincipal = function(url) {
-    document.getElementById("main-img").src = url;
-}
-
-// Cerrar modal
-document.querySelector(".close-modal").onclick = () => modal.style.display = "none";
-window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; };
-
-renderizarProductos();
+// Al cargar la página por primera vez, mostramos todo
+window.onload = () => mostrarProductos(productos);

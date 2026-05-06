@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo Digital | MakroFantasy</title>
+    <meta name="description" content="Distribuidora mayorista en Valledupar de Fantasía, Papelería, Bisutería y más.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
+
 <body>
     <header class="main-header">
         <div class="header-container">
@@ -20,13 +23,13 @@
             <nav class="nav-menu">
                 <div>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Cacharreria</a></li>
-                        <li><a href="#">Belleza</a></li>
-                        <li><a href="#">Escolar</a></li>
-                        <li><a href="#">Oficina</a></li>
-                        <li><a href="#">Detalles</a></li>
-                        <li><a href="#">Jugueteria</a></li>    
+                        <li><a href="#" class="nav-link" data-category="todos">Inicio</a></li>
+                        <li><a href="#" class="nav-link" data-category="cacharreria">Cacharreria</a></li>
+                        <li><a href="#" class="nav-link" data-category="belleza">Belleza</a></li>
+                        <li><a href="#" class="nav-link" data-category="fantasia">Fantasia</a></li>
+                        <li><a href="#" class="nav-link" data-category="papeleria">Papeleria</a></li>
+                        <li><a href="#" class="nav-link" data-category="jugueteria">Jugueteria</a></li>
+                        <li><a href="#" class="nav-link" data-category="tecnologia">Tecnologia</a></li>
                     </ul>
                 </div>
             </nav>
@@ -34,45 +37,20 @@
     <main>
         <section class="home-hero">
             <div class="hero-header">
-                <div class="hero-content"> <h2>Calidad al por mayor, magia al<span> Detalle</span></h2>
-                <p>Distribuidora mayorista de Fantasia, Papeleria, Bisuteria, Maquillaje, Detalle y mas.</p>
+                <div class="hero-content">
+                    <h2>Calidad al por mayor, magia al<span> Detalle</span></h2>
+                    <p>Distribuidora mayorista de Fantasia, Papeleria, Bisuteria, Maquillaje, Detalle y mas.</p>
+                    <h3 id="titulo-categoria" class="titulo-categoria">Nuestro Catálogo</h3>
+                </div>
+                <div id="contenedor-principal" class="product-grid">
+
                 </div>
             </div>
-            <div id="contenedor-productos" class="product-scroller">
-                    <div class="product-card">                                       
-                    </div>
-            </div>
-        </section>
+
     </main>
-    <div id="modal-product" class="modal">
-        <div class="modal-nav-arrows">
-            <button id="scroll-up" class="nav-arrow">&#9650;</button>
-            <button id="scroll-down" class="nav-arrow">&#9660;</button>
-        </div>
-        <div class="modal-content"> 
-            <span class="close-modal">&times;</span>
-            <div class="modal-grid">
-                <div class="modal-gallery">
-                    <img src="imagenes/6942349738423-mascarilla-facial-bioaqua-centella.png" alt="Mascarilla Facial Bioaqua" class="main-modal-img" id="main-img">
-                    <div class="thumbnails">
-                        <img src="imagenes/6942349736704-mascarilla-facial-bioaqua-enzimas.png" alt="Mascarilla Facial Bioaqua" onclick="changeImg(this.src)">
-                        <img src="imagenes/6976504680052-mascarilla-facial-bioaqua-caviar.png" alt="Mascarilla Facial Bioaqua" onclick="changeImg(this.src)">
-                        <img src="imagenes/6942349738423-mascarilla-facial-bioaqua-centella.png" alt="Mascarilla Facial Bioaqua" onclick="changeImg(this.src)">
-                    </div>
-                </div>
-                    <div class="modal-info"><h2 id="modal-titulo">Mascarilla Facial Bioaqua</h2> <p class="modal-price">$2000</p>
-                        <div class="modal-full-description"><p>Con las Mascarillas Faciales Bioaqua en sus presentaciones: <br>
-                            <span>Centella:</span> Extracto de Centella Asiatica que hidrata y nutre tu piel dejandola suave y tersa. <br>
-                            <span>Vegetales:</span> Extracto de fibras vegetales para una piel mas elastica, sueve y tersa <br>
-                            <span>Esencia de Caviar</span>promueve la regeneración celular y la firmeza de la piel</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>       
-        <footer class="main-footer">
+    <footer class="main-footer">
         <div class="footer-grid">
-            <div class footer-section>
+            <div class="footer-section">
                 <h2 class="footer-logo-text">Makro<span>Fantasy</span></h2>
             </div>
             <div class="footer-section">
@@ -89,10 +67,14 @@
                 </ul>
             </div>
             <div class="social-icons">
-                <a href="https://www.facebook.com/share/1CEMyMCB2G/"> <i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/makrofantasy?igsh=MW13YTJhanliemR4Mw=="><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@makrofantasyoficial?_r=1&_t=ZS-95aqe8K0m4F"><i class="fab fa-tiktok"></i></a>
-                <a href="https://youtube.com/@makrofantasy?si=pkeOoUOEPlGIY098"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/share/1CEMyMCB2G/" target="_blank"> <i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/makrofantasy?igsh=MW13YTJhanliemR4Mw==" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@makrofantasyoficial?_r=1&_t=ZS-95aqe8K0m4F" target="_blank"><i
+                        class="fab fa-tiktok"></i></a>
+                <a href="https://youtube.com/@makrofantasy?si=pkeOoUOEPlGIY098"><i class="fab fa-youtube"
+                        target="_blank"></i></a>
             </div>
             <div class="footer-section">
                 <h3>Atencion al Clinte</h3>
@@ -101,9 +83,12 @@
                 <p><i class="fas fa-clock"></i>7am - 8pm</p>
             </div>
         </div>
-        <div class="footer-bottom"><p>&copy; 2026 MakroFantasy. Creado con el <span class="corazon">&hearts;</span> en Valledupar.</p></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MakroFantasy. Creado con el <span class="corazon">&hearts;</span> en Valledupar.</p>
+        </div>
     </footer>
     <script src="productos.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -87,6 +87,21 @@
             <p>&copy; 2026 MakroFantasy. Creado con el <span class="corazon">&hearts;</span> en Valledupar.</p>
         </div>
     </footer>
+    <!-- Modal para cantidad -->
+<div id="modalPedido" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <h3 id="modalTitulo">Nombre del Producto</h3>
+        <img id="modalImg" src="" alt="" style="width: 100px; height: 100px; object-fit: cover; border-radius: 10px;">
+        
+        <p>¿Cuántas unidades deseas pedir?</p>
+        <input type="number" id="modalCantidad" value="1" min="1">
+        
+        <button id="btnConfirmarPedido" onclick="enviarWhatsApp()" class="btn-enviar-wa">
+            Confirmar y enviar a WhatsApp
+        </button>
+    </div>
+</div>
     <script src="productos.js"></script>
     <script src="main.js"></script>
 </body>
